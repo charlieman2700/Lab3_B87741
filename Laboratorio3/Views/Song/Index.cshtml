@@ -1,0 +1,55 @@
+﻿
+@model Laboratorio3.Models.SongModel;
+@{
+
+    ViewData["Title"] = "Favorite Song";
+}
+
+
+<h1 style="text-align:center">@ViewBag.MainTitle</h1>
+<br />
+
+<div>
+    <label style="width:350px"></label>
+
+    <label style="width:300px">Name</label>
+
+    <label style="width:250px" class="p-1 border border">@Model.Name</label>
+
+
+
+</div>
+
+<div>
+    <label style="width:350px"></label>
+
+    <label style="width:300px">Artist</label>
+    <label style="width:250px" class="p-1 border border">@Model.Artist</label>
+
+</div>
+
+<div>
+    <label style="width:350px"></label>
+
+    <label style="width:300px">Genre</label>
+    <label style="width:250px" class="p-1 border border">@Model.Genre</label>
+
+
+</div>
+
+<div>
+    <label style="width:350px"></label>
+
+    <label style="width:300px">Release year</label>
+    <label style="width:250px" class="p-1 border border-2">@Model.ReleasedYear</label>
+
+</div>
+
+<div>
+    <label style="width:350px"></label>
+
+    <label style="width:300px">Album Cover</label>
+    <img src="@Model.ImageUrl" style="width:250px;height:250px;" alt="alternatetext">
+
+</div>
+
